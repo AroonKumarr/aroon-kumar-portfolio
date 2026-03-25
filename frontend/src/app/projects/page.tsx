@@ -162,11 +162,7 @@ export default function ProjectsPage() {
             {projectsByDomain.map((section, sectionIndex) => (
               <section
                 key={section.id}
-                className={`rounded-2xl p-6 sm:p-8 border ${
-                  sectionIndex % 2 === 0
-                    ? 'bg-primary-900/10 border-primary-700/20'
-                    : 'bg-dark-900 border-dark-800'
-                }`}
+                className="about-section-card rounded-2xl p-6 sm:p-8"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 12 }}
@@ -193,7 +189,7 @@ export default function ProjectsPage() {
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: index * 0.08 }}
-                          className="group relative h-full rounded-xl overflow-hidden bg-dark-800/50 border border-dark-700 hover:border-primary-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 flex flex-col"
+                          className="about-highlight-card group relative h-full rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 flex flex-col"
                         >
                           <div className="aspect-video bg-dark-700 flex items-center justify-center relative overflow-hidden">
                             {cardImage ? (
