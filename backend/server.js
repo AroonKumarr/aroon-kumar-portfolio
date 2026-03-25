@@ -33,6 +33,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// Root route for quick platform checks
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Error:', err.message);
@@ -63,8 +68,9 @@ const connectDB = async () => {
 };
 
 const PORT = process.env.PORT || 5000;
+const HOST = '0.0.0.0';
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   connectDB();
 });
