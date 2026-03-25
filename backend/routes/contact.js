@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 const Contact = require('../models/Contact');
 const { auth, adminOnly } = require('../middleware/auth');
 
@@ -10,6 +11,13 @@ router.post('/', async (req, res) => {
     
     if (!name || !email || !message) {
       return res.status(400).json({ error: 'Name, email, and message are required' });
+    }
+
+    // Fail fast if MongoDB is not connected instead of waiting for buffered timeouts.
+    if (mongoose.connection.readyState !== 1) {
+      return res.status(503).json({
+        error: 'Database is unavailable. Please try again in a moment.'
+      });
     }
     
     const contact = new Contact({

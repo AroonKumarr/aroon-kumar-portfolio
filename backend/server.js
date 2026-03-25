@@ -47,7 +47,13 @@ if (MINIMAL_DEBUG_MODE) {
   app.use('/api/ai', aiRoutes);
 
   app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+    const dbConnected = mongoose.connection.readyState === 1;
+
+    res.status(dbConnected ? 200 : 503).json({
+      status: dbConnected ? 'ok' : 'degraded',
+      dbConnected,
+      timestamp: new Date().toISOString()
+    });
   });
 
   app.get('/', (req, res) => {
