@@ -134,11 +134,11 @@ export default function ContactPage() {
 
       <section className="py-16 bg-dark-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <div className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="about-section-card rounded-2xl p-8">
+            <div className="about-section-inner grid md:grid-cols-3 gap-8 p-8 rounded-xl">
               <a
                 href="mailto:aroonk644@gmail.com"
-                className="p-6 bg-dark-900/70 border border-dark-700/50 rounded-lg hover:bg-dark-900 transition-colors"
+                className="about-highlight-card p-6 rounded-lg transition-colors"
               >
                 <div className="text-3xl mb-2">📧</div>
                 <h3 className="text-white font-semibold mb-1">Email</h3>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                 href="https://github.com/AroonKumarr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 bg-dark-900/70 border border-dark-700/50 rounded-lg hover:bg-dark-900 transition-colors"
+                className="about-highlight-card p-6 rounded-lg transition-colors"
               >
                 <div className="text-3xl mb-2">🐙</div>
                 <h3 className="text-white font-semibold mb-1">GitHub</h3>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                 href="https://www.linkedin.com/in/aroon-kumar-38507528a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 bg-dark-900/70 border border-dark-700/50 rounded-lg hover:bg-dark-900 transition-colors"
+                className="about-highlight-card p-6 rounded-lg transition-colors"
               >
                 <div className="text-3xl mb-2">💼</div>
                 <h3 className="text-white font-semibold mb-1">LinkedIn</h3>
@@ -175,7 +175,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-dark-700/60 bg-dark-900 p-8">
+          <div className="contact-form-shell rounded-2xl p-8">
             <form
               onSubmit={handleSubmit}
               className="space-y-6"
