@@ -230,12 +230,12 @@ export default function ContactPage() {
 
               {status.type !== 'idle' && (
                 <div
-                  className={`p-3 rounded text-sm font-medium ${
+                  className={`contact-status p-3 rounded text-sm font-medium ${
                     status.type === 'success'
-                      ? 'bg-green-500/20 text-green-300 border border-green-500/30'
+                      ? 'contact-status-success bg-green-500/20 text-green-300 border border-green-500/30'
                       : status.type === 'error'
-                      ? 'bg-red-500/20 text-red-300 border border-red-500/30'
-                      : 'bg-primary-500/20 text-primary-300 border border-primary-500/30'
+                      ? 'contact-status-error bg-red-500/20 text-red-300 border border-red-500/30'
+                      : 'contact-status-loading bg-primary-500/20 text-primary-300 border border-primary-500/30'
                   }`}
                 >
                   {status.message}

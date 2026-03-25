@@ -568,6 +568,46 @@ html {
   box-shadow: 0 16px 30px -24px rgba(2, 132, 199, 0.5);
 }
 
+.contact-status {
+  font-weight: 600;
+}
+
+.contact-status-success {
+  color: #bbf7d0 !important;
+  background-color: rgba(22, 163, 74, 0.22) !important;
+  border-color: rgba(34, 197, 94, 0.45) !important;
+}
+
+.contact-status-error {
+  color: #fecaca !important;
+  background-color: rgba(220, 38, 38, 0.22) !important;
+  border-color: rgba(248, 113, 113, 0.5) !important;
+}
+
+.contact-status-loading {
+  color: #bae6fd !important;
+  background-color: rgba(8, 145, 178, 0.24) !important;
+  border-color: rgba(34, 211, 238, 0.45) !important;
+}
+
+.light .contact-status-success {
+  color: #14532d !important;
+  background-color: rgba(134, 239, 172, 0.42) !important;
+  border-color: rgba(34, 197, 94, 0.45) !important;
+}
+
+.light .contact-status-error {
+  color: #7f1d1d !important;
+  background-color: rgba(254, 202, 202, 0.7) !important;
+  border-color: rgba(239, 68, 68, 0.45) !important;
+}
+
+.light .contact-status-loading {
+  color: #0c4a6e !important;
+  background-color: rgba(186, 230, 253, 0.68) !important;
+  border-color: rgba(14, 165, 233, 0.45) !important;
+}
+
 .light ::selection {
   background-color: rgba(14, 165, 233, 0.22);
   color: #0f172a;
