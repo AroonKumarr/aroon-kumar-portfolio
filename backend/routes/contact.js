@@ -12,20 +12,22 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ error: 'Name, email, and message are required' });
     }
     
-    // If MongoDB is available, save to database
+    const contact = new Contact({
+      name,
+      email,
+      subject,
+      message,
+      ip: req.ip,
+      userAgent: req.headers['user-agent']
+    });
+
     try {
-      const contact = new Contact({
-        name,
-        email,
-        subject,
-        message,
-        ip: req.ip,
-        userAgent: req.headers['user-agent']
-      });
       await contact.save();
     } catch (dbError) {
-      // If DB fails, still return success (don't break the form)
-      console.log('Contact form saved to demo mode');
+      console.error('Contact form DB save failed:', dbError.message);
+      return res.status(503).json({
+        error: 'Database is unavailable. Please try again in a moment.'
+      });
     }
     
     res.status(201).json({ 

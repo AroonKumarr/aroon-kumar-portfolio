@@ -71,13 +71,16 @@ if (MINIMAL_DEBUG_MODE) {
   const connectDB = async () => {
     try {
       if (process.env.MONGODB_URI) {
-        await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect(process.env.MONGODB_URI, {
+          serverSelectionTimeoutMS: 10000,
+        });
         console.log('✅ MongoDB connected');
       } else {
         console.log('⚠️ MongoDB URI not configured - running in demo mode');
       }
     } catch (error) {
-      console.log('⚠️ MongoDB connection failed - running in demo mode');
+      console.error('⚠️ MongoDB connection failed - running in demo mode');
+      console.error('MongoDB error details:', error.message);
     }
   };
 
