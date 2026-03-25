@@ -36,9 +36,30 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              AK
+          <Link href="/" className="flex items-center">
+            <span className="flex flex-col items-center text-center leading-tight">
+              <motion.span
+                className="block text-xl font-bold bg-gradient-to-r from-primary-300 via-primary-400 to-primary-600 bg-clip-text text-transparent"
+                animate={{
+                  scale: [1, 1.06, 1],
+                  opacity: [0.92, 1, 0.92],
+                  textShadow: [
+                    '0 0 0px rgba(34,211,238,0.0)',
+                    '0 0 16px rgba(34,211,238,0.35)',
+                    '0 0 0px rgba(34,211,238,0.0)',
+                  ],
+                }}
+                transition={{
+                  duration: 2.2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+              >
+                AK
+              </motion.span>
+              <span className="block text-[10px] sm:text-xs font-medium bg-gradient-to-r from-primary-200 via-primary-300 to-primary-400 bg-clip-text text-transparent -mt-0.5">
+                Aroon Kumar
+              </span>
             </span>
           </Link>
 

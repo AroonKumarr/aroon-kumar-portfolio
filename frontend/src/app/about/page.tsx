@@ -5,6 +5,25 @@ import { useState } from 'react';
 export default function AboutPage() {
   const [expandedExperience, setExpandedExperience] = useState<number | null>(null);
 
+  const professionalProfile = {
+   
+    education:
+      "Bachelor's in Computer Science at SZABIST (Aug 2022 - Aug 2026)",
+    currentWork: [
+      'Part-time AI/ML development work (project-focused, high-impact builds)',
+      'Data Science / MLOps Internship at 10Pearls '
+    ],
+    learningGoals: [
+      'Improve raw DSA problem solving without over-relying on AI',
+      'Strengthen systems design thinking for large-scale products',
+      'Explore Robotics and AI integration',
+      'Learn German for global collaboration opportunities',
+      'Work deeply on model fine-tuning and integration of open-source deep learning models'
+    ],
+    careerDirection:
+      'Long-term target: secure high-impact engineering roles at FAANG/MANG-level companies and build globally competitive AI systems.'
+  };
+
   const skills = {
     'Generative AI & LLMs': [
       'LLMs', 'RAG Systems', 'Agentic AI', 'Multi-Agent Systems',
@@ -75,14 +94,7 @@ export default function AboutPage() {
     },
   ];
 
-  const education = [
-    {
-      degree: 'Bachelor of Computer Science',
-      institution: 'SZABIST - ISLAMABAD',
-      year: '2022 - 2026 ',
-      focus: 'Artificial Intelligence, Machine Learning, and Full-Stack Development',
-    },
-  ];
+
 
   const achievements = [
     {
@@ -117,7 +129,7 @@ export default function AboutPage() {
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
+            <h1 className="text-4xl font-bold text-white mb-4">Aroon Kumar</h1>
             <p className="text-dark-400 max-w-2xl mx-auto">
               I'm an AI/ML Engineer and Full Stack Developer passionate about building intelligent, production-grade systems.
               Currently focused on Agentic AI, LLM-powered architectures, and scalable ML solutions.
@@ -129,6 +141,47 @@ export default function AboutPage() {
 
       <section className="py-16 bg-dark-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
+            <h2 className="text-3xl font-bold text-white mb-8">Professional Profile</h2>
+            <div className="bg-dark-900/70 p-6 rounded-xl border border-dark-700/50 space-y-6">
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="rounded-lg border border-dark-700/60 bg-dark-900 p-4">
+                  <p className="text-sm uppercase tracking-wide text-primary-300 mb-2">Education</p>
+                  <p className="text-dark-200">{professionalProfile.education}</p>
+                </div>
+                <div className="rounded-lg border border-dark-700/60 bg-dark-900 p-4">
+                  <p className="text-sm uppercase tracking-wide text-primary-300 mb-2">Career Direction</p>
+                  <p className="text-dark-200">{professionalProfile.careerDirection}</p>
+                </div>
+              </div>
+
+              <div>
+                <p className="text-sm uppercase tracking-wide text-primary-300 mb-3">Current Work</p>
+                <ul className="space-y-2">
+                  {professionalProfile.currentWork.map((item, index) => (
+                    <li key={index} className="text-dark-300 flex gap-2">
+                      <span className="text-primary-400 flex-shrink-0">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-sm uppercase tracking-wide text-primary-300 mb-3">Learning & Growth Focus</p>
+                <ul className="space-y-2">
+                  {professionalProfile.learningGoals.map((goal, index) => (
+                    <li key={index} className="text-dark-300 flex gap-2">
+                      <span className="text-primary-400 flex-shrink-0">•</span>
+                      <span>{goal}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
             <div className="grid grid-cols-3 gap-4 bg-dark-900/70 p-8 rounded-xl border border-dark-700/50 shadow-[0_0_0_1px_rgba(34,211,238,0.06)]">
               <div className="text-center">
@@ -217,19 +270,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8">Education</h2>
-            <div className="space-y-4">
-              {education.map((edu, idx) => (
-                <div key={idx} className="bg-dark-900/70 p-6 rounded-lg border border-dark-700/50 hover:border-primary-500/40 transition-all duration-300 hover:shadow-[0_14px_28px_-20px_rgba(34,211,238,0.4)]">
-                  <h3 className="text-lg font-semibold text-white">{edu.degree}</h3>
-                  <p className="text-primary-400">{edu.institution}</p>
-                  <p className="text-sm text-dark-300 mt-2">{edu.year}</p>
-                  <p className="text-dark-300 mt-2">{edu.focus}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+      
 
           <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
             <h2 className="text-3xl font-bold text-white mb-8">Highlights</h2>
