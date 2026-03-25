@@ -131,18 +131,19 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-dark-950">
-      <section className="relative py-24 overflow-hidden bg-dark-900 border-b border-dark-800">
+      <section className="relative py-24 overflow-hidden bg-dark-900 project-hero-surface">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+          <div className="absolute inset-0 project-hero-spotlight bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
+          <div className="absolute inset-0 project-hero-grid bg-[url('/grid.svg')] opacity-5" />
         </div>
+        <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(92%,1100px)] -translate-x-1/2 bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">Projects</h1>
+          <h1 className="text-4xl font-bold text-white mb-4 project-hero-title">Projects</h1>
           <p className="text-dark-400 max-w-2xl mx-auto">
             A collection of my work in AI, full-stack development, and robotics. 
             Each project represents a unique challenge and solution.
@@ -217,7 +218,7 @@ export default function ProjectsPage() {
                               {project.techStack.slice(0, 4).map((tech) => (
                                 <span
                                   key={tech}
-                                  className="cursor-default px-3 py-1 text-xs font-medium rounded-full bg-primary-500/10 text-primary-400 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300 hover:shadow-[0_8px_18px_-10px_rgba(34,211,238,0.8)]"
+                                  className="home-tech-pill cursor-default px-3 py-1 text-xs font-medium rounded-full bg-primary-500/10 text-primary-400 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300"
                                 >
                                   {tech}
                                 </span>
@@ -235,7 +236,7 @@ export default function ProjectsPage() {
                                   href={project.githubUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center text-sm text-dark-400 hover:text-white transition-colors"
+                                  className="home-project-link inline-flex items-center px-2 py-1 rounded-md text-sm text-dark-400 hover:text-white transition-colors"
                                 >
                                   <Github className="w-4 h-4 mr-1" />
                                   Code
@@ -246,7 +247,7 @@ export default function ProjectsPage() {
                                   href={project.liveUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center text-sm text-dark-400 hover:text-white transition-colors"
+                                  className="home-project-link inline-flex items-center px-2 py-1 rounded-md text-sm text-dark-400 hover:text-white transition-colors"
                                 >
                                   <ExternalLink className="w-4 h-4 mr-1" />
                                   Demo

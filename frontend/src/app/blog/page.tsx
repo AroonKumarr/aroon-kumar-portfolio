@@ -68,18 +68,19 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-dark-950">
-      <section className="relative py-24 overflow-hidden bg-dark-900 border-b border-dark-800">
+      <section className="relative py-24 overflow-hidden bg-dark-900 blog-hero-surface">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+          <div className="absolute inset-0 blog-hero-spotlight bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
+          <div className="absolute inset-0 blog-hero-grid bg-[url('/grid.svg')] opacity-5" />
         </div>
+        <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(92%,1100px)] -translate-x-1/2 bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h1 className="text-4xl font-bold text-white mb-4">Blog</h1>
+          <h1 className="text-4xl font-bold text-white mb-4 blog-hero-title">Blog</h1>
           <p className="text-dark-400 max-w-2xl mx-auto">
             Technical notes from my AI, ML, and full-stack engineering journey.
           </p>
@@ -97,9 +98,9 @@ export default function BlogPage() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 text-sm rounded-full border transition-all duration-200 ${
+              className={`blog-category-btn px-4 py-2 text-sm rounded-full border transition-all duration-200 ${
                 activeCategory === category
-                  ? 'bg-primary-500 text-white border-primary-500'
+                  ? 'blog-category-btn-active bg-primary-500 text-white border-primary-500'
                   : 'bg-dark-900 text-dark-300 border-dark-700 hover:border-primary-500/50 hover:text-white'
               }`}
             >
@@ -138,7 +139,7 @@ export default function BlogPage() {
                     {blog.tags?.slice(0, 3).map((tag) => (
                       <span
                         key={tag}
-                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs bg-primary-500/10 text-primary-300"
+                        className="home-tech-pill inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs bg-primary-500/10 text-primary-300 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300"
                       >
                         <Tag className="w-3 h-3" />
                         {tag}

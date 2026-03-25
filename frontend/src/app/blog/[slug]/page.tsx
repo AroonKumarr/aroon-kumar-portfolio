@@ -136,7 +136,7 @@ export default function BlogDetailPage() {
   return (
     <div className="min-h-screen py-24 bg-dark-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link href="/blog" className="inline-flex items-center text-dark-300 hover:text-white mb-8 transition-colors">
+        <Link href="/blog" className="blog-detail-back-link inline-flex items-center px-2 py-1 rounded-md text-dark-300 hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
         </Link>
 
@@ -165,7 +165,7 @@ export default function BlogDetailPage() {
               {blog.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs bg-primary-500/10 text-primary-300"
+                  className="home-tech-pill inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs bg-primary-500/10 text-primary-300 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300"
                 >
                   <Tag className="w-3 h-3" /> {tag}
                 </span>
@@ -207,10 +207,10 @@ export default function BlogDetailPage() {
                 <Link
                   key={item.slug}
                   href={`/blog/${item.slug}`}
-                  className="rounded-xl border border-dark-700 bg-dark-900/60 p-4 hover:border-primary-500/40 transition-colors"
+                  className="blog-related-card group rounded-xl border border-dark-700 bg-dark-900/60 p-4 transition-all duration-200 hover:border-primary-500/40 hover:-translate-y-0.5"
                 >
                   <p className="text-xs text-dark-400 mb-1">{item.readTime} min read</p>
-                  <h3 className="text-white font-semibold mb-1 line-clamp-2">{item.title}</h3>
+                  <h3 className="text-white font-semibold mb-1 line-clamp-2 group-hover:text-primary-400 transition-colors">{item.title}</h3>
                   <p className="text-dark-300 text-sm line-clamp-2">{item.excerpt}</p>
                 </Link>
               ))}

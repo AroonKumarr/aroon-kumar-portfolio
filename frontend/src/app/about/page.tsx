@@ -121,15 +121,16 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-dark-950">
-      <section className="relative py-24 overflow-hidden bg-dark-900 border-b border-dark-800">
+      <section className="relative py-24 overflow-hidden bg-dark-900 about-hero-surface">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+          <div className="absolute inset-0 about-hero-spotlight bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
+          <div className="absolute inset-0 about-hero-grid bg-[url('/grid.svg')] opacity-5" />
         </div>
+        <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(92%,1100px)] -translate-x-1/2 bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">Aroon Kumar</h1>
+            <h1 className="text-4xl font-bold text-white mb-4 about-hero-title">Aroon Kumar</h1>
             <p className="text-dark-400 max-w-2xl mx-auto">
               I'm an AI/ML Engineer and Full Stack Developer passionate about building intelligent, production-grade systems.
               Currently focused on Agentic AI, LLM-powered architectures, and scalable ML solutions.
@@ -141,27 +142,27 @@ export default function AboutPage() {
 
       <section className="py-16 bg-dark-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8">Professional Profile</h2>
-            <div className="bg-dark-900/70 p-6 rounded-xl border border-dark-700/50 space-y-6">
+          <section className="about-profile-shell about-section-card rounded-2xl p-8">
+            <h2 className="about-profile-title text-3xl font-bold mb-8">Professional Profile</h2>
+            <div className="about-profile-panel p-6 rounded-xl space-y-6">
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="rounded-lg border border-dark-700/60 bg-dark-900 p-4">
-                  <p className="text-sm uppercase tracking-wide text-primary-300 mb-2">Education</p>
-                  <p className="text-dark-200">{professionalProfile.education}</p>
+                <div className="about-profile-card rounded-lg p-4">
+                  <p className="about-profile-label text-sm uppercase tracking-wide mb-2">Education</p>
+                  <p className="about-profile-text">{professionalProfile.education}</p>
                 </div>
-                <div className="rounded-lg border border-dark-700/60 bg-dark-900 p-4">
-                  <p className="text-sm uppercase tracking-wide text-primary-300 mb-2">Career Direction</p>
-                  <p className="text-dark-200">{professionalProfile.careerDirection}</p>
+                <div className="about-profile-card rounded-lg p-4">
+                  <p className="about-profile-label text-sm uppercase tracking-wide mb-2">Career Direction</p>
+                  <p className="about-profile-text">{professionalProfile.careerDirection}</p>
                 </div>
               </div>
 
               <div>
-                <p className="text-sm uppercase tracking-wide text-primary-300 mb-3">Current Work</p>
+                <p className="about-profile-label text-sm uppercase tracking-wide mb-3">Current Work</p>
                 <ul className="space-y-2">
                   {professionalProfile.currentWork.map((item, index) => (
-                    <li key={index} className="text-dark-300 flex gap-2">
-                      <span className="text-primary-400 flex-shrink-0">•</span>
+                    <li key={index} className="about-profile-text flex gap-2">
+                      <span className="about-profile-bullet flex-shrink-0">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -169,11 +170,11 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <p className="text-sm uppercase tracking-wide text-primary-300 mb-3">Learning & Growth Focus</p>
+                <p className="about-profile-label text-sm uppercase tracking-wide mb-3">Learning & Growth Focus</p>
                 <ul className="space-y-2">
                   {professionalProfile.learningGoals.map((goal, index) => (
-                    <li key={index} className="text-dark-300 flex gap-2">
-                      <span className="text-primary-400 flex-shrink-0">•</span>
+                    <li key={index} className="about-profile-text flex gap-2">
+                      <span className="about-profile-bullet flex-shrink-0">•</span>
                       <span>{goal}</span>
                     </li>
                   ))}
@@ -182,8 +183,8 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
-            <div className="grid grid-cols-3 gap-4 bg-dark-900/70 p-8 rounded-xl border border-dark-700/50 shadow-[0_0_0_1px_rgba(34,211,238,0.06)]">
+          <section className="about-section-card rounded-2xl p-8">
+            <div className="about-section-inner grid grid-cols-3 gap-4 p-8 rounded-xl shadow-[0_0_0_1px_rgba(34,211,238,0.06)]">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-400">11+</div>
                 <div className="text-sm text-dark-300">Projects Built</div>
@@ -199,31 +200,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
-            <h2 className="text-3xl font-bold text-white mb-8">Skills & Expertise</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {Object.entries(skills).map(([category, skillList], idx) => (
-                <div
-                  key={idx}
-                  className="bg-dark-900/70 p-6 rounded-lg border border-dark-700/50 transition-all duration-300 hover:border-primary-500/40 hover:bg-dark-900 hover:shadow-[0_16px_35px_-20px_rgba(34,211,238,0.45)]"
-                >
-                  <h3 className="text-lg font-semibold text-white mb-4">{category}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skillList.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="cursor-default px-3 py-1 bg-primary-500/15 text-primary-300 rounded-full text-sm border border-primary-500/30 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-primary-500/25 hover:text-white hover:border-primary-400/70 hover:shadow-[0_8px_20px_-12px_rgba(34,211,238,0.85)]"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
+          <section className="about-section-card rounded-2xl p-8">
             <h2 className="text-3xl font-bold text-white mb-12">Experience</h2>
             <div className="relative">
               <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-700"></div>
@@ -238,13 +215,13 @@ export default function AboutPage() {
                       <div className="w-5 h-5 bg-primary-500 rounded-full border-4 border-dark-900 group-hover:bg-primary-400 group-hover:scale-110 transition-all duration-300"></div>
                     </div>
 
-                    <div className="bg-dark-900 p-6 rounded-lg border border-dark-700 group-hover:border-primary-500/50 group-hover:bg-dark-800 transition-all duration-300 group-hover:shadow-[0_16px_30px_-20px_rgba(34,211,238,0.4)]">
+                    <div className="about-experience-card p-6 rounded-lg transition-all duration-300">
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex-1">
-                          <h3 className="text-lg font-bold text-white mb-1">{exp.title}</h3>
-                          <p className="text-primary-400 text-sm">{exp.company}</p>
+                          <h3 className="about-experience-title text-lg font-bold text-white mb-1">{exp.title}</h3>
+                          <p className="about-experience-company text-primary-400 text-sm">{exp.company}</p>
                         </div>
-                        <span className="text-xl text-dark-300 group-hover:text-primary-400 transition-colors">
+                        <span className="about-experience-toggle text-xl text-dark-300 transition-colors">
                           {expandedExperience === idx ? '−' : '+'}
                         </span>
                       </div>
@@ -270,13 +247,37 @@ export default function AboutPage() {
             </div>
           </section>
 
+          <section className="about-section-card rounded-2xl p-8">
+            <h2 className="text-3xl font-bold text-white mb-8">Skills & Expertise</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {Object.entries(skills).map(([category, skillList], idx) => (
+                <div
+                  key={idx}
+                  className="about-skill-card p-6 rounded-lg transition-all duration-300 hover:border-primary-500/40 hover:bg-dark-900 hover:shadow-[0_16px_35px_-20px_rgba(34,211,238,0.45)]"
+                >
+                  <h3 className="text-lg font-semibold text-white mb-4">{category}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skillList.map((skill, i) => (
+                      <span
+                        key={i}
+                        className="home-tech-pill cursor-default px-3 py-1 rounded-full text-sm bg-primary-500/10 text-primary-300 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
       
 
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8">
+          <section className="about-section-card rounded-2xl p-8">
             <h2 className="text-3xl font-bold text-white mb-8">Highlights</h2>
             <div className="grid md:grid-cols-2 md:auto-rows-fr gap-6">
               {achievements.map((achievement, idx) => (
-                <div key={idx} className="h-full min-h-[220px] bg-dark-900/70 p-6 rounded-lg border border-dark-700/50 text-center flex flex-col justify-center hover:border-primary-500/40 transition-all duration-300 hover:shadow-[0_14px_28px_-20px_rgba(34,211,238,0.35)]">
+                <div key={idx} className="about-highlight-card h-full min-h-[220px] p-6 rounded-lg text-center flex flex-col justify-center hover:border-primary-500/40 transition-all duration-300 hover:shadow-[0_14px_28px_-20px_rgba(34,211,238,0.35)]">
                   <div className="text-4xl mb-3">{achievement.icon}</div>
                   <h3 className="text-lg font-semibold text-white mb-2">{achievement.title}</h3>
                   <p className="text-dark-300 text-sm">{achievement.description}</p>
@@ -285,7 +286,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="rounded-2xl border border-primary-700/20 bg-primary-900/10 p-8 text-center">
+          <section className="about-section-card rounded-2xl p-8 text-center">
             <p className="text-dark-300 mb-6">Want to see my work in detail or discuss a project?</p>
             <div className="flex gap-4 justify-center">
               <a
@@ -299,7 +300,7 @@ export default function AboutPage() {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-dark-700 hover:bg-dark-600 text-white font-semibold rounded transition-colors"
+                className="home-resume-btn inline-flex items-center px-6 py-3 rounded-lg border border-dark-700 hover:border-primary-500 text-dark-300 hover:text-white font-medium transition-colors"
               >
                 Download Resume
               </a>

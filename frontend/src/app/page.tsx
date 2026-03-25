@@ -69,9 +69,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] py-14 sm:py-0 flex items-center justify-center overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-dark-950">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-950 to-dark-950" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+        <div className="absolute inset-0 bg-dark-950 hero-bg-surface">
+          <div className="absolute inset-0 hero-bg-spotlight bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-950 to-dark-950" />
+          <div className="absolute inset-0 hero-bg-grid bg-[url('/grid.svg')] opacity-5" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
@@ -96,7 +96,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl leading-tight sm:text-6xl lg:text-7xl font-bold mb-5 sm:mb-6"
           >
-            <span className="bg-gradient-to-r from-white via-dark-100 to-dark-300 bg-clip-text text-transparent">
+            <span className="hero-title-gradient bg-gradient-to-r from-white via-dark-100 to-dark-300 bg-clip-text text-transparent">
               AI Systems Engineer | Full-Stack Developer
             </span>
           </motion.h1>
@@ -128,7 +128,7 @@ export default function Home() {
               download
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full sm:w-auto justify-center items-center px-6 py-3 rounded-lg border border-dark-700 hover:border-primary-500 text-dark-300 hover:text-white font-medium transition-colors"
+              className="home-resume-btn inline-flex w-full sm:w-auto justify-center items-center px-6 py-3 rounded-lg border border-dark-700 hover:border-primary-500 text-dark-300 hover:text-white font-medium transition-colors"
             >
               <Download className="mr-2 w-4 h-4" />
               Download Resume
@@ -197,9 +197,9 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-dark-800/50 border border-dark-700 hover:border-primary-500/50 transition-colors"
+                className="home-skill-card p-6 rounded-xl bg-dark-800/50 border border-dark-700 hover:border-primary-500/50 transition-all duration-200"
               >
-                <skill.icon className="w-10 h-10 text-primary-400 mb-4" />
+                <skill.icon className="home-skill-icon w-10 h-10 text-primary-400 mb-4 transition-colors duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">{skill.label}</h3>
                 <p className="text-dark-400 text-sm">{skill.description}</p>
               </motion.div>
@@ -253,7 +253,7 @@ export default function Home() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-primary-500/10 text-primary-400"
+                        className="home-tech-pill cursor-default px-3 py-1 text-xs font-medium rounded-full bg-primary-500/10 text-primary-400 border border-primary-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-500/20 hover:border-primary-400/50 hover:text-primary-300"
                       >
                         {tech}
                       </span>
@@ -265,7 +265,7 @@ export default function Home() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-dark-400 hover:text-white transition-colors"
+                        className="home-project-link inline-flex items-center px-2 py-1 rounded-md text-sm text-dark-400 hover:text-white transition-colors"
                       >
                         <Github className="w-4 h-4 mr-1" />
                         Code
@@ -276,7 +276,7 @@ export default function Home() {
                         href={project.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-dark-400 hover:text-white transition-colors"
+                        className="home-project-link inline-flex items-center px-2 py-1 rounded-md text-sm text-dark-400 hover:text-white transition-colors"
                       >
                         <ExternalLink className="w-4 h-4 mr-1" />
                         Demo
@@ -297,7 +297,7 @@ export default function Home() {
           <div className="text-center mt-10 sm:mt-12">
             <Link
               href="/projects"
-              className="inline-flex w-full sm:w-auto justify-center items-center px-6 py-3 rounded-lg border border-dark-700 hover:border-primary-500 text-dark-300 hover:text-white font-medium transition-colors"
+              className="home-view-all-btn inline-flex w-full sm:w-auto justify-center items-center px-6 py-3 rounded-lg border border-dark-700 hover:border-primary-500 text-dark-300 hover:text-white font-medium transition-colors"
             >
               View All Projects
             </Link>

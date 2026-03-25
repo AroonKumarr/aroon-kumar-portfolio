@@ -115,14 +115,15 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-dark-950">
-      <section className="relative py-24 overflow-hidden bg-dark-900 border-b border-dark-800">
+      <section className="relative py-24 overflow-hidden bg-dark-900 contact-hero-surface">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+          <div className="absolute inset-0 contact-hero-spotlight bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-dark-900 to-dark-900" />
+          <div className="absolute inset-0 contact-hero-grid bg-[url('/grid.svg')] opacity-5" />
         </div>
+        <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(92%,1100px)] -translate-x-1/2 bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4 contact-hero-title">
             Get In Touch
           </h1>
           <p className="text-dark-400 max-w-2xl mx-auto">
@@ -190,7 +191,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your name"
-                  className="w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500"
+                  className="contact-form-field w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500"
                   disabled={status.type === 'loading'}
                 />
               </div>
@@ -206,7 +207,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500"
+                  className="contact-form-field w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500"
                   disabled={status.type === 'loading'}
                 />
               </div>
@@ -222,7 +223,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   placeholder="Your message here..."
                   rows={5}
-                  className="w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500 resize-none"
+                  className="contact-form-field w-full px-4 py-2 bg-dark-900 border border-dark-700 text-white placeholder-dark-500 rounded focus:outline-none focus:border-primary-500 resize-none"
                   disabled={status.type === 'loading'}
                 />
               </div>
