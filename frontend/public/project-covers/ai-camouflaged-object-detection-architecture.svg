@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AI Camouflaged Object Detection architecture view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Architecture View</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">AI Camouflaged Object Detection System</text>
+
+  <g>
+    <rect x="64" y="180" width="220" height="96" rx="14" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="174" y="230" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Input Image</text>
+
+    <rect x="352" y="180" width="220" height="96" rx="14" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="462" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Backbone</text>
+    <text x="462" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">ResNet Feature Maps</text>
+
+    <rect x="640" y="180" width="220" height="96" rx="14" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="750" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Search Attention</text>
+    <text x="750" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">Context Focus</text>
+
+    <rect x="928" y="180" width="220" height="96" rx="14" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="1038" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Output Mask</text>
+    <text x="1038" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">Detected Object Region</text>
+  </g>
+
+  <g>
+    <line x1="284" y1="228" x2="352" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="572" y1="228" x2="640" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="860" y1="228" x2="928" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+
+  <g>
+    <rect x="224" y="360" width="252" height="84" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.48"/>
+    <text x="350" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">RF Block</text>
+
+    <rect x="514" y="360" width="252" height="84" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.48"/>
+    <text x="640" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">PDC Decoder</text>
+
+    <rect x="804" y="360" width="252" height="84" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.48"/>
+    <text x="930" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Boundary Refinement</text>
+  </g>
+
+  <g>
+    <line x1="350" y1="276" x2="350" y2="360" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="640" y1="276" x2="640" y2="360" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="930" y1="276" x2="930" y2="360" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+
+  <rect x="64" y="530" width="1152" height="124" rx="14" fill="#0f172a" fill-opacity="0.7" stroke="#22d3ee" stroke-opacity="0.38"/>
+  <text x="94" y="574" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Model Highlights:</text>
+  <text x="94" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- SINet with attention-guided localization</text>
+  <text x="560" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Multi-stage decoder for fine object boundaries</text>
+</svg>

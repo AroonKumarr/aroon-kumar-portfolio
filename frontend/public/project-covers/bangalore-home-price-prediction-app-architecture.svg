@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Bangalore Home Price Prediction App architecture view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Architecture View</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Bangalore Home Price Prediction App</text>
+
+  <rect x="64" y="182" width="230" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="179" y="236" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Raw Dataset</text>
+
+  <rect x="342" y="182" width="230" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="457" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Data Cleaning</text>
+  <text x="457" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">outliers + null handling</text>
+
+  <rect x="620" y="182" width="240" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="740" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Feature Engineering</text>
+  <text x="740" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">location encoding + scaling</text>
+
+  <rect x="908" y="182" width="312" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1064" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Linear Regression Model</text>
+  <text x="1064" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">training + validation</text>
+
+  <line x1="294" y1="228" x2="342" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="572" y1="228" x2="620" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="860" y1="228" x2="908" y2="228" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="160" y="336" width="300" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="310" y="380" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Model Artifacts</text>
+  <text x="310" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">pickle model + columns.json</text>
+
+  <rect x="492" y="336" width="300" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="642" y="380" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Flask API</text>
+  <text x="642" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">/predict_home_price endpoint</text>
+
+  <rect x="824" y="336" width="300" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="974" y="380" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Web UI</text>
+  <text x="974" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">input form + output card</text>
+
+  <line x1="310" y1="274" x2="310" y2="336" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="642" y1="274" x2="642" y2="336" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="974" y1="274" x2="974" y2="336" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="64" y="530" width="1152" height="124" rx="14" fill="#0f172a" fill-opacity="0.72" stroke="#22d3ee" stroke-opacity="0.38"/>
+  <text x="94" y="574" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Deployment Flow:</text>
+  <text x="94" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Train offline -> export artifacts -> serve via Flask</text>
+  <text x="676" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- UI requests prediction in realtime</text>
+</svg>

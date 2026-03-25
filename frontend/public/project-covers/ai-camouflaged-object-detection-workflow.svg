@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AI Camouflaged Object Detection workflow snapshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081220"/>
+      <stop offset="60%" stop-color="#12263a"/>
+      <stop offset="100%" stop-color="#155e75"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Workflow Snapshot</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Data -> Training -> Inference -> Evaluation</text>
+
+  <g>
+    <rect x="56" y="190" width="220" height="106" rx="14" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="166" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Dataset Prep</text>
+    <text x="166" y="268" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">COD10K + masks</text>
+
+    <rect x="322" y="190" width="220" height="106" rx="14" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="432" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Augmentation</text>
+    <text x="432" y="268" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">resize, crop, flip</text>
+
+    <rect x="588" y="190" width="220" height="106" rx="14" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="698" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Train SINet</text>
+    <text x="698" y="268" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">attention learning</text>
+
+    <rect x="854" y="190" width="220" height="106" rx="14" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="964" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Infer Masks</text>
+    <text x="964" y="268" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">pixel probabilities</text>
+  </g>
+
+  <g>
+    <line x1="276" y1="243" x2="322" y2="243" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="542" y1="243" x2="588" y2="243" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="808" y1="243" x2="854" y2="243" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+
+  <g>
+    <rect x="96" y="362" width="460" height="250" rx="18" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <text x="126" y="404" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Training Metrics</text>
+  <path d="M126 560 L210 520 L294 532 L378 474 L462 438 L526 418" fill="none" stroke="#22d3ee" stroke-width="5"/>
+  <path d="M126 560 L210 546 L294 518 L378 496 L462 452 L526 436" fill="none" stroke="#a78bfa" stroke-width="4" opacity="0.82"/>
+    <text x="126" y="590" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">mIoU and F-measure improve over epochs</text>
+  </g>
+
+  <g>
+    <rect x="616" y="362" width="568" height="250" rx="18" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <text x="648" y="404" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Inference + Post-processing</text>
+
+    <rect x="648" y="430" width="250" height="148" rx="12" fill="#1f2937"/>
+    <rect x="930" y="430" width="220" height="148" rx="12" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="759" y="514" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">Input Camouflaged Frame</text>
+    <text x="1040" y="514" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">Binary Mask + Overlay</text>
+
+    <line x1="900" y1="504" x2="930" y2="504" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+</svg>

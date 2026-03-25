@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AQI Predictor Islamabad architecture view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1324"/>
+      <stop offset="100%" stop-color="#13344b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" fill="#f8fafc" font-weight="700">Architecture View</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">AQI Predictor Islamabad</text>
+
+  <rect x="70" y="184" width="222" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="181" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0" font-weight="600">Data Sources</text>
+  <text x="181" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">AQI + Weather APIs</text>
+
+  <rect x="334" y="184" width="236" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="452" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0" font-weight="600">Feature Pipeline</text>
+  <text x="452" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">Cleaning + Lag Features</text>
+
+  <rect x="612" y="184" width="228" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="726" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0" font-weight="600">Model Layer</text>
+  <text x="726" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">XGBoost + RF Ensemble</text>
+
+  <rect x="882" y="184" width="328" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1046" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0" font-weight="600">Serving + Explainability</text>
+  <text x="1046" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">Streamlit + SHAP insights</text>
+
+  <line x1="292" y1="224" x2="334" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="570" y1="224" x2="612" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="840" y1="224" x2="882" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="334" width="554" height="306" rx="16" fill="#0f172a" fill-opacity="0.84" stroke="#38bdf8" stroke-opacity="0.44"/>
+  <text x="114" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">MLOps Controls</text>
+  <text x="114" y="420" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Scheduled ingestion and retraining jobs</text>
+  <text x="114" y="456" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Model versioning and experiment tracking</text>
+  <text x="114" y="492" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Data drift monitoring and alerts</text>
+  <text x="114" y="528" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Reliability checks before deploy</text>
+
+  <rect x="668" y="334" width="542" height="306" rx="16" fill="#0f172a" fill-opacity="0.84" stroke="#38bdf8" stroke-opacity="0.44"/>
+  <text x="702" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Forecast Output</text>
+  <rect x="702" y="410" width="474" height="56" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="726" y="444" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">Next-day AQI prediction with confidence</text>
+  <rect x="702" y="486" width="474" height="56" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="726" y="520" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">SHAP feature impact visualization</text>
+  <rect x="702" y="562" width="474" height="56" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="726" y="596" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">Actionable pollution trend dashboard</text>
+</svg>

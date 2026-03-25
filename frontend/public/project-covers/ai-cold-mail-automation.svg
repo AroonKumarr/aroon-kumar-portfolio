@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AI Cold Mail Automation cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)" />
+  <g opacity="0.16" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+  <text x="70" y="560" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700" fill="#f8fafc">AI Cold Mail Automation</text>
+  <text x="70" y="620" font-family="Inter, Arial, sans-serif" font-size="30" fill="#bae6fd">LLM Workflow</text>
+</svg>

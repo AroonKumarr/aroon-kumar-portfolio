@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Bangalore Home Price Prediction App cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="58%" stop-color="#1d2942"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.11" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <rect x="82" y="92" width="782" height="478" rx="24" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.34"/>
+
+  <rect x="116" y="140" width="332" height="190" rx="16" fill="#111827" stroke="#334155"/>
+  <text x="140" y="178" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Input Features</text>
+  <text x="140" y="214" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">- Location: Indiranagar</text>
+  <text x="140" y="242" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">- BHK: 3</text>
+  <text x="140" y="270" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">- Sqft: 1650</text>
+  <text x="140" y="298" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">- Bath: 2</text>
+
+  <rect x="472" y="140" width="356" height="190" rx="16" fill="#111827" stroke="#334155"/>
+  <text x="496" y="178" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Prediction Output</text>
+  <text x="496" y="228" font-family="Inter, Arial, sans-serif" font-size="22" fill="#22d3ee" font-weight="700">Estimated Price</text>
+  <text x="496" y="266" font-family="Inter, Arial, sans-serif" font-size="34" fill="#f8fafc" font-weight="800">INR 1.72 Crore</text>
+  <text x="496" y="302" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">Linear Regression Confidence: 0.89</text>
+
+  <rect x="116" y="356" width="712" height="178" rx="16" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.4"/>
+  <text x="140" y="398" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Price Trend by Locality</text>
+  <path d="M146 496 L234 468 L322 474 L410 442 L498 416 L586 424 L674 382 L762 372" fill="none" stroke="#22d3ee" stroke-width="5"/>
+  <path d="M146 510 L234 496 L322 486 L410 472 L498 456 L586 452 L674 430 L762 420" fill="none" stroke="#a78bfa" stroke-width="4" opacity="0.8"/>
+
+  <rect x="892" y="112" width="322" height="446" rx="20" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="924" y="164" font-family="Inter, Arial, sans-serif" font-size="30" fill="#f8fafc" font-weight="700">ML Pipeline</text>
+  <text x="924" y="214" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Data cleaning</text>
+  <text x="924" y="252" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Outlier removal</text>
+  <text x="924" y="290" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- One-hot encoding</text>
+  <text x="924" y="328" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Feature scaling</text>
+  <text x="924" y="366" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Train linear model</text>
+  <text x="924" y="404" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Serve via Flask API</text>
+
+  <text x="90" y="626" font-family="Inter, Arial, sans-serif" font-size="50" fill="#f8fafc" font-weight="800">Bangalore Home Price Prediction App</text>
+  <text x="90" y="670" font-family="Inter, Arial, sans-serif" font-size="27" fill="#bae6fd">Machine Learning | Regression Model | Interactive Flask UI</text>
+</svg>

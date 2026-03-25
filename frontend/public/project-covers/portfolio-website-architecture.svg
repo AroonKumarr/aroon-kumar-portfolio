@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Portfolio Website architecture view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Architecture View</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Portfolio Website</text>
+  <rect x="64" y="182" width="216" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="172" y="236" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Browser</text>
+  <rect x="328" y="182" width="232" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="444" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Next.js App</text>
+  <text x="444" y="250" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">App Router + TS</text>
+  <rect x="608" y="182" width="232" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="724" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">API Layer</text>
+  <text x="724" y="250" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">blogs + projects</text>
+  <rect x="888" y="182" width="328" height="92" rx="12" fill="url(#box)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1052" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Static Assets + CDN</text>
+  <text x="1052" y="250" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">images, icons, resume</text>
+  <line x1="280" y1="226" x2="328" y2="226" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="560" y1="226" x2="608" y2="226" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="840" y1="226" x2="888" y2="226" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="116" y="334" width="312" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="272" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Theme System</text>
+  <text x="272" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">dark/light + mobile tuning</text>
+  <rect x="484" y="334" width="312" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="640" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Project Gallery</text>
+  <text x="640" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">cover + architecture + workflow</text>
+  <rect x="852" y="334" width="312" height="112" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="1008" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Animations</text>
+  <text x="1008" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">Framer Motion transitions</text>
+  <rect x="64" y="530" width="1152" height="124" rx="14" fill="#0f172a" fill-opacity="0.72" stroke="#22d3ee" stroke-opacity="0.38"/>
+  <text x="94" y="574" font-family="Inter, Arial, sans-serif" font-size="24" fill="#e2e8f0" font-weight="600">Deployment:</text>
+  <text x="94" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Frontend on Vercel, backend optional fallback support</text>
+  <text x="696" y="610" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Static resume and assets served without backend</text>
+</svg>

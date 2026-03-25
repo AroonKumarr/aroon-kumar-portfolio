@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AigilityX AI Platform cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="58%" stop-color="#1b2540"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <rect x="74" y="86" width="816" height="476" rx="26" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.34"/>
+
+  <rect x="110" y="134" width="180" height="78" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity="0.48"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" fill="#e2e8f0" font-weight="700">Speech Input</text>
+
+  <rect x="344" y="134" width="180" height="78" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity="0.48"/>
+  <text x="434" y="180" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" fill="#e2e8f0" font-weight="700">STT Service</text>
+
+  <rect x="578" y="134" width="180" height="78" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity="0.48"/>
+  <text x="668" y="180" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" fill="#e2e8f0" font-weight="700">RAG + Agent</text>
+
+  <rect x="344" y="258" width="180" height="78" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity="0.48"/>
+  <text x="434" y="304" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" fill="#e2e8f0" font-weight="700">Gateway API</text>
+
+  <rect x="578" y="258" width="180" height="78" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity="0.48"/>
+  <text x="668" y="304" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" fill="#e2e8f0" font-weight="700">TTS Output</text>
+
+  <rect x="110" y="382" width="300" height="126" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.4"/>
+  <text x="132" y="420" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Supabase Layer</text>
+  <text x="132" y="452" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">users, chats, embeddings</text>
+  <text x="132" y="478" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">session memory + logs</text>
+
+  <rect x="448" y="382" width="300" height="126" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.4"/>
+  <text x="470" y="420" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Realtime Orchestration</text>
+  <text x="470" y="452" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">streaming events + agent routing</text>
+  <text x="470" y="478" font-family="Inter, Arial, sans-serif" font-size="18" fill="#bae6fd">low-latency response pipeline</text>
+
+  <path d="M290 172 H344" stroke="url(#flow)" stroke-width="6"/>
+  <path d="M524 172 H578" stroke="url(#flow)" stroke-width="6"/>
+  <path d="M434 212 V258" stroke="url(#flow)" stroke-width="6"/>
+  <path d="M668 212 V258" stroke="url(#flow)" stroke-width="6"/>
+  <path d="M410 445 H448" stroke="url(#flow)" stroke-width="6"/>
+
+  <rect x="920" y="104" width="304" height="452" rx="20" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="952" y="156" font-family="Inter, Arial, sans-serif" font-size="30" fill="#f8fafc" font-weight="700">AigilityX Stack</text>
+  <text x="952" y="206" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- RAG retrieval engine</text>
+  <text x="952" y="244" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Multi-agent task planning</text>
+  <text x="952" y="282" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- STT/TTS voice support</text>
+  <text x="952" y="320" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- Supabase persistence</text>
+  <text x="952" y="358" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">- React + Vite frontend</text>
+
+  <text x="88" y="624" font-family="Inter, Arial, sans-serif" font-size="52" fill="#f8fafc" font-weight="800">AigilityX AI Platform</text>
+  <text x="88" y="668" font-family="Inter, Arial, sans-serif" font-size="27" fill="#bae6fd">Full-stack AI orchestration with realtime voice and agent workflows</text>
+</svg>

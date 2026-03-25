@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Portfolio Website workflow snapshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081220"/>
+      <stop offset="58%" stop-color="#12263a"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Workflow Snapshot</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Visit -> Explore -> Open Projects -> Contact</text>
+  <rect x="52" y="176" width="232" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="168" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Landing Hero</text>
+  <rect x="330" y="176" width="232" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="446" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Projects Grid</text>
+  <rect x="608" y="176" width="232" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="724" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Project Details</text>
+  <rect x="886" y="176" width="342" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1057" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Resume + Contact Conversion</text>
+  <line x1="284" y1="225" x2="330" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="562" y1="225" x2="608" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="840" y1="225" x2="886" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="84" y="334" width="560" height="286" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="116" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Client-side Journey Metrics</text>
+  <text x="116" y="426" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Fast first content from local fallback data</text>
+  <text x="116" y="462" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Smooth page transitions with single-entry animation</text>
+  <text x="116" y="498" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Mobile-optimized CTA and navigation flow</text>
+  <text x="116" y="534" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Static resume download works without backend</text>
+  <rect x="686" y="334" width="522" height="286" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="718" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">User Actions</text>
+  <rect x="718" y="412" width="458" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="740" y="442" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">1. Read featured projects and blogs</text>
+  <rect x="718" y="474" width="458" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="740" y="504" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">2. Open project details and review architecture</text>
+  <rect x="718" y="536" width="458" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="740" y="566" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">3. Download resume and submit contact message</text>
+</svg>

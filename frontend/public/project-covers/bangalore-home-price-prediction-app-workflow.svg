@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Bangalore Home Price Prediction App workflow snapshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081220"/>
+      <stop offset="58%" stop-color="#12263a"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Workflow Snapshot</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">User Input -> API Prediction -> Price Display</text>
+
+  <rect x="52" y="176" width="218" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="161" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Form Inputs</text>
+
+  <rect x="320" y="176" width="218" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="429" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Validation</text>
+
+  <rect x="588" y="176" width="246" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="711" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Flask API Call</text>
+  <text x="711" y="246" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">/predict_home_price</text>
+
+  <rect x="884" y="176" width="344" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1056" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Prediction Card Render</text>
+  <text x="1056" y="246" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">price + confidence + locality context</text>
+
+  <line x1="270" y1="225" x2="320" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="538" y1="225" x2="588" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="834" y1="225" x2="884" y2="225" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="84" y="334" width="560" height="286" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="116" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">API Response Example</text>
+
+  <rect x="116" y="410" width="496" height="170" rx="12" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="140" y="446" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">{</text>
+  <text x="158" y="476" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">"location": "Indiranagar",</text>
+  <text x="158" y="504" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">"estimated_price": 17200000,</text>
+  <text x="158" y="532" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">"model": "Linear Regression",</text>
+  <text x="158" y="560" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">"confidence": 0.89</text>
+  <text x="140" y="586" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">}</text>
+
+  <rect x="684" y="334" width="524" height="286" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="716" y="376" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">UI Output States</text>
+
+  <rect x="716" y="412" width="460" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="738" y="442" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">1. Loading spinner while API request is in-flight</text>
+
+  <rect x="716" y="474" width="460" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="738" y="504" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">2. Render final estimated price with INR format</text>
+
+  <rect x="716" y="536" width="460" height="46" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="738" y="566" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">3. Show fallback error if API is unavailable</text>
+</svg>

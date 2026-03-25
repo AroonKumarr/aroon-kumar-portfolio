@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Portfolio Website cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#1b2740"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+  <rect x="74" y="88" width="1132" height="532" rx="24" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.35"/>
+  <rect x="112" y="134" width="1056" height="42" rx="10" fill="#111827"/>
+  <circle cx="136" cy="155" r="6" fill="#ef4444"/>
+  <circle cx="156" cy="155" r="6" fill="#f59e0b"/>
+  <circle cx="176" cy="155" r="6" fill="#22c55e"/>
+  <rect x="208" y="146" width="320" height="18" rx="9" fill="#1f2937"/>
+  <rect x="112" y="196" width="364" height="380" rx="16" fill="#0b1220" stroke="#1e293b"/>
+  <text x="140" y="242" font-family="Inter, Arial, sans-serif" font-size="28" fill="#f8fafc" font-weight="700">AI Systems Engineer</text>
+  <text x="140" y="282" font-family="Inter, Arial, sans-serif" font-size="21" fill="#bae6fd">Full-Stack Developer</text>
+  <rect x="140" y="316" width="304" height="12" rx="6" fill="#1e293b"/>
+  <rect x="140" y="340" width="268" height="12" rx="6" fill="#1e293b"/>
+  <rect x="140" y="364" width="292" height="12" rx="6" fill="#1e293b"/>
+  <rect x="140" y="404" width="148" height="40" rx="10" fill="#06b6d4"/>
+  <rect x="296" y="404" width="148" height="40" rx="10" fill="#0f172a" stroke="#22d3ee"/>
+  <rect x="496" y="196" width="672" height="184" rx="16" fill="#0b1220" stroke="#1e293b"/>
+  <text x="528" y="236" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Featured Projects</text>
+  <rect x="528" y="256" width="190" height="104" rx="12" fill="#1f2937"/>
+  <rect x="736" y="256" width="190" height="104" rx="12" fill="#1f2937"/>
+  <rect x="944" y="256" width="190" height="104" rx="12" fill="#1f2937"/>
+  <rect x="496" y="396" width="672" height="180" rx="16" fill="#0b1220" stroke="#1e293b"/>
+  <text x="528" y="438" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Latest Blog Notes</text>
+  <rect x="528" y="458" width="608" height="12" rx="6" fill="#1e293b"/>
+  <rect x="528" y="482" width="552" height="12" rx="6" fill="#1e293b"/>
+  <rect x="528" y="506" width="578" height="12" rx="6" fill="#1e293b"/>
+  <text x="90" y="668" font-family="Inter, Arial, sans-serif" font-size="48" fill="#f8fafc" font-weight="800">Portfolio Website</text>
+</svg>

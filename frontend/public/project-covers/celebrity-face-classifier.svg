@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Celebrity Face Classifier cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="58%" stop-color="#1b2540"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.88"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <rect x="86" y="104" width="742" height="452" rx="24" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.36"/>
+
+  <rect x="118" y="144" width="296" height="360" rx="16" fill="#111827"/>
+  <circle cx="266" cy="244" r="68" fill="#334155"/>
+  <rect x="198" y="322" width="136" height="138" rx="66" fill="#334155"/>
+  <rect x="174" y="200" width="40" height="26" rx="6" fill="#22d3ee" fill-opacity="0.8"/>
+  <rect x="318" y="200" width="40" height="26" rx="6" fill="#22d3ee" fill-opacity="0.8"/>
+  <rect x="156" y="178" width="220" height="290" rx="10" fill="none" stroke="#22d3ee" stroke-width="4"/>
+  <text x="128" y="534" font-family="Inter, Arial, sans-serif" font-size="19" fill="#bae6fd">Detected Face + Eyes</text>
+
+  <rect x="438" y="144" width="360" height="360" rx="16" fill="#0b1220" stroke="#1e293b"/>
+  <text x="462" y="188" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Prediction Console</text>
+  <text x="462" y="232" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Top-1: Celebrity A</text>
+  <rect x="462" y="246" width="304" height="8" rx="4" fill="#1e293b"/>
+  <rect x="462" y="246" width="258" height="8" rx="4" fill="#22d3ee"/>
+
+  <text x="462" y="294" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Top-2: Celebrity B</text>
+  <rect x="462" y="308" width="304" height="8" rx="4" fill="#1e293b"/>
+  <rect x="462" y="308" width="164" height="8" rx="4" fill="#38bdf8"/>
+
+  <text x="462" y="356" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Top-3: Celebrity C</text>
+  <rect x="462" y="370" width="304" height="8" rx="4" fill="#1e293b"/>
+  <rect x="462" y="370" width="118" height="8" rx="4" fill="#67e8f9"/>
+
+  <text x="462" y="430" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">Model: SVM + Wavelet Features</text>
+  <text x="462" y="458" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">Confidence: 0.91</text>
+
+  <rect x="860" y="130" width="334" height="426" rx="20" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="892" y="182" font-family="Inter, Arial, sans-serif" font-size="28" fill="#f8fafc" font-weight="700">Pipeline</text>
+  <text x="892" y="228" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">1. Face detection</text>
+  <text x="892" y="266" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">2. Eye validation</text>
+  <text x="892" y="304" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">3. Wavelet transform</text>
+  <text x="892" y="342" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">4. Feature vector build</text>
+  <text x="892" y="380" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">5. SVM classification</text>
+  <text x="892" y="418" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">6. Probability output</text>
+
+  <text x="114" y="624" font-family="Inter, Arial, sans-serif" font-size="48" fill="#f8fafc" font-weight="700">Celebrity Face Classifier</text>
+  <text x="114" y="668" font-family="Inter, Arial, sans-serif" font-size="27" fill="#bae6fd">OpenCV | Wavelets | SVM | Real-time Classification</text>
+</svg>

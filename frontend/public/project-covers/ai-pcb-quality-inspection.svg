@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AI PCB Quality Inspection cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090f1f"/>
+      <stop offset="55%" stop-color="#16243a"/>
+      <stop offset="100%" stop-color="#0b5e74"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="pcbGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <rect width="36" height="36" fill="#0f5132"/>
+      <path d="M0 18 H36 M18 0 V36" stroke="#86efac" stroke-opacity="0.22" stroke-width="1"/>
+      <circle cx="18" cy="18" r="2.2" fill="#e2e8f0" fill-opacity="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <rect x="90" y="106" width="760" height="470" rx="26" fill="url(#glass)" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <rect x="124" y="154" width="520" height="320" rx="14" fill="url(#pcbGrid)"/>
+
+  <g fill="none" stroke="#93c5fd" stroke-width="2.2" opacity="0.75">
+    <path d="M152 188 H332 V236 H520"/>
+    <path d="M182 312 H286 V264 H420"/>
+    <path d="M390 392 H540 V338 H612"/>
+  </g>
+
+  <g>
+    <rect x="286" y="236" width="168" height="120" rx="10" fill="#0f172a" fill-opacity="0.25" stroke="#22d3ee" stroke-width="3"/>
+    <text x="300" y="226" font-family="Inter, Arial, sans-serif" font-size="20" fill="#67e8f9" font-weight="600">Defect Region</text>
+    <text x="300" y="384" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">class: open-circuit</text>
+    <text x="300" y="408" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e2e8f0">confidence: 0.96</text>
+  </g>
+
+  <rect x="884" y="122" width="312" height="430" rx="20" fill="url(#glass)" stroke="#22d3ee" stroke-opacity="0.36"/>
+  <text x="916" y="176" font-family="Inter, Arial, sans-serif" font-size="28" fill="#f8fafc" font-weight="700">Inspection Console</text>
+
+  <text x="916" y="222" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Open Circuit</text>
+  <rect x="916" y="238" width="248" height="8" rx="4" fill="#1e293b"/>
+  <rect x="916" y="238" width="214" height="8" rx="4" fill="#22d3ee"/>
+
+  <text x="916" y="292" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Missing Hole</text>
+  <rect x="916" y="308" width="248" height="8" rx="4" fill="#1e293b"/>
+  <rect x="916" y="308" width="102" height="8" rx="4" fill="#22d3ee"/>
+
+  <text x="916" y="362" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Spur Defect</text>
+  <rect x="916" y="378" width="248" height="8" rx="4" fill="#1e293b"/>
+  <rect x="916" y="378" width="128" height="8" rx="4" fill="#22d3ee"/>
+
+  <text x="916" y="432" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">Short Circuit</text>
+  <rect x="916" y="448" width="248" height="8" rx="4" fill="#1e293b"/>
+  <rect x="916" y="448" width="160" height="8" rx="4" fill="#22d3ee"/>
+
+  <text x="116" y="632" font-family="Inter, Arial, sans-serif" font-size="48" fill="#f8fafc" font-weight="700">AI PCB Quality Inspection</text>
+  <text x="116" y="674" font-family="Inter, Arial, sans-serif" font-size="27" fill="#bae6fd">Industrial Vision | Defect Classification | Production QA</text>
+</svg>

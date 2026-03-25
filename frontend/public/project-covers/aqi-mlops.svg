@@ -1,0 +1,50 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#132A3D"/>
+    </linearGradient>
+    <linearGradient id="line" x1="120" y1="520" x2="1040" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1200" height="675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="170" cy="120" r="220" fill="#22D3EE" fill-opacity="0.14"/>
+  <circle cx="1080" cy="570" r="260" fill="#34D399" fill-opacity="0.12"/>
+
+  <g opacity="0.16" stroke="#94A3B8" stroke-width="1">
+    <path d="M100 130H1100"/>
+    <path d="M100 220H1100"/>
+    <path d="M100 310H1100"/>
+    <path d="M100 400H1100"/>
+    <path d="M100 490H1100"/>
+    <path d="M100 580H1100"/>
+    <path d="M100 130V580"/>
+    <path d="M260 130V580"/>
+    <path d="M420 130V580"/>
+    <path d="M580 130V580"/>
+    <path d="M740 130V580"/>
+    <path d="M900 130V580"/>
+    <path d="M1100 130V580"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M130 520C210 500 245 470 320 455C388 440 456 470 530 415C614 351 680 288 758 280C845 271 910 326 980 294C1025 274 1065 235 1090 200" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="320" cy="455" r="8" fill="#2DD4BF"/>
+    <circle cx="530" cy="415" r="8" fill="#2DD4BF"/>
+    <circle cx="758" cy="280" r="8" fill="#60A5FA"/>
+    <circle cx="980" cy="294" r="8" fill="#60A5FA"/>
+  </g>
+
+  <rect x="80" y="66" width="246" height="48" rx="24" fill="#1E293B" fill-opacity="0.8"/>
+  <text x="103" y="98" fill="#A5F3FC" font-family="Arial, sans-serif" font-size="22" font-weight="700">AQI + MLOps</text>
+
+  <text x="80" y="610" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="52" font-weight="800">AQI Predictor Islamabad</text>
+  <text x="80" y="646" fill="#94A3B8" font-family="Arial, sans-serif" font-size="24" font-weight="500">Forecasting, Explainability, and Automated Retraining</text>
+</svg>

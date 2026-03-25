@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Restaurant Name Generator architecture view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#18344c"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" fill="#f8fafc" font-weight="700">Architecture View</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Restaurant Name Generator</text>
+
+  <rect x="70" y="182" width="228" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="184" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Cuisine Input</text>
+  <text x="184" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">Theme + audience</text>
+
+  <rect x="336" y="182" width="248" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="460" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Prompt Chain</text>
+  <text x="460" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">Name, slogan, menu steps</text>
+
+  <rect x="622" y="182" width="236" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="740" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">LLM Layer</text>
+  <text x="740" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">OpenAI completion</text>
+
+  <rect x="896" y="182" width="314" height="92" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+  <text x="1053" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Streamlit UI</text>
+  <text x="1053" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bae6fd">Instant preview and re-run</text>
+
+  <line x1="298" y1="224" x2="336" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="584" y1="224" x2="622" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="858" y1="224" x2="896" y2="224" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="76" y="326" width="558" height="312" rx="16" fill="#0f172a" fill-opacity="0.84" stroke="#38bdf8" stroke-opacity="0.42"/>
+  <text x="110" y="370" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Generation Strategy</text>
+  <text x="110" y="414" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Brand-safe naming prompts with style controls</text>
+  <text x="110" y="450" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Chained output: name list -> menu outline</text>
+  <text x="110" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Consistent formatting for copy/paste use</text>
+  <text x="110" y="522" font-family="Inter, Arial, sans-serif" font-size="20" fill="#bae6fd">- Fast iterative loop for idea refinement</text>
+
+  <rect x="666" y="326" width="544" height="312" rx="16" fill="#0f172a" fill-opacity="0.84" stroke="#38bdf8" stroke-opacity="0.42"/>
+  <text x="700" y="370" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Output Blocks</text>
+  <rect x="700" y="402" width="476" height="58" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="724" y="438" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">Restaurant names with tone labels</text>
+  <rect x="700" y="480" width="476" height="58" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="724" y="516" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">Starter, main, dessert menu concepts</text>
+  <rect x="700" y="558" width="476" height="58" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.32"/>
+  <text x="724" y="594" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">Regenerate with tighter constraints</text>
+</svg>

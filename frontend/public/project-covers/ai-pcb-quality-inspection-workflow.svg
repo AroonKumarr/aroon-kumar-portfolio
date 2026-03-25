@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="AI PCB Quality Inspection workflow snapshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081220"/>
+      <stop offset="55%" stop-color="#12263a"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.1" stroke="#cbd5e1" stroke-width="1">
+    <path d="M0 120 H1280 M0 240 H1280 M0 360 H1280 M0 480 H1280 M0 600 H1280"/>
+    <path d="M160 0 V720 M320 0 V720 M480 0 V720 M640 0 V720 M800 0 V720 M960 0 V720 M1120 0 V720"/>
+  </g>
+
+  <text x="64" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#f8fafc">Workflow Snapshot</text>
+  <text x="64" y="116" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bae6fd">Capture -> Detect -> Classify -> Report</text>
+
+  <g>
+    <rect x="52" y="178" width="208" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+    <text x="156" y="232" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Line Camera</text>
+
+    <rect x="312" y="178" width="220" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+    <text x="422" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Frame Pre-check</text>
+    <text x="422" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">blur and alignment</text>
+
+    <rect x="584" y="178" width="220" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+    <text x="694" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Defect Inference</text>
+    <text x="694" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">ResNet-18 model</text>
+
+    <rect x="856" y="178" width="370" height="98" rx="12" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.52"/>
+    <text x="1041" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" fill="#e2e8f0" font-weight="600">Decision + Operator Alert</text>
+    <text x="1041" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#bae6fd">pass/fail and issue class</text>
+  </g>
+
+  <line x1="260" y1="227" x2="312" y2="227" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="532" y1="227" x2="584" y2="227" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="804" y1="227" x2="856" y2="227" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="72" y="340" width="540" height="292" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="104" y="384" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Defect Distribution (Sample Batch)</text>
+
+  <rect x="112" y="424" width="72" height="168" rx="8" fill="#22d3ee" fill-opacity="0.8"/>
+  <rect x="214" y="468" width="72" height="124" rx="8" fill="#38bdf8" fill-opacity="0.78"/>
+  <rect x="316" y="512" width="72" height="80" rx="8" fill="#67e8f9" fill-opacity="0.76"/>
+  <rect x="418" y="486" width="72" height="106" rx="8" fill="#a78bfa" fill-opacity="0.72"/>
+  <rect x="520" y="544" width="72" height="48" rx="8" fill="#c4b5fd" fill-opacity="0.7"/>
+
+  <text x="148" y="616" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cbd5e1">Open</text>
+  <text x="250" y="616" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cbd5e1">Short</text>
+  <text x="352" y="616" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cbd5e1">Spur</text>
+  <text x="454" y="616" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cbd5e1">Mouse</text>
+  <text x="556" y="616" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cbd5e1">Other</text>
+
+  <rect x="652" y="340" width="556" height="292" rx="18" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.46"/>
+  <text x="684" y="384" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc" font-weight="700">Production Actions</text>
+
+  <rect x="684" y="426" width="492" height="52" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="710" y="458" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">1. Flag board and mark defect coordinates</text>
+
+  <rect x="684" y="492" width="492" height="52" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="710" y="524" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">2. Route board to rework / reject lane</text>
+
+  <rect x="684" y="558" width="492" height="52" rx="10" fill="#111827" stroke="#22d3ee" stroke-opacity="0.34"/>
+  <text x="710" y="590" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e2e8f0">3. Save traceability log in QA dashboard</text>
+</svg>
