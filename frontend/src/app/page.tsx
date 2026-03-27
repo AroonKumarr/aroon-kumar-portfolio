@@ -97,7 +97,7 @@ export default function Home() {
             className="text-3xl leading-tight sm:text-6xl lg:text-7xl font-bold mb-5 sm:mb-6"
           >
             <span className="hero-title-gradient bg-gradient-to-r from-white via-dark-100 to-dark-300 bg-clip-text text-transparent">
-              AI Systems Engineer | Full-Stack Developer
+              AI Systems Engineer
             </span>
           </motion.h1>
 
