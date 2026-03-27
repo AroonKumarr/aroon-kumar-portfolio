@@ -8,7 +8,7 @@ export default function AboutPage() {
   const professionalProfile = {
    
     education:
-      "Bachelor's in Computer Science at SZABIST (Aug 2022 - Aug 2026)",
+      "Bachelor's in Computer Science at NUST (Aug 2022 - Aug 2026)",
     currentWork: [
       'Part-time AI/ML development work (project-focused, high-impact builds)',
       'Data Science / MLOps Internship at 10Pearls '
