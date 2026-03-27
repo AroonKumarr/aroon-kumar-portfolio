@@ -132,7 +132,7 @@ export default function AboutPage() {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4 about-hero-title">Aroon Kumar</h1>
             <p className="text-dark-400 max-w-2xl mx-auto">
-              I'm an AI/ML Engineer and Full Stack Developer passionate about building intelligent, production-grade systems.
+              I'm an AI/ML Engineer passionate about building intelligent, production-grade systems.
               Currently focused on Agentic AI, LLM-powered architectures, and scalable ML solutions.
               I combine deep learning expertise with modern backend development to create end-to-end AI systems that solve real-world problems.
             </p>
