@@ -35,8 +35,14 @@ if (MINIMAL_DEBUG_MODE) {
 
   app.use(helmet());
   app.use(cors({
-    origin: process.env.CORS_ORIGIN || 'http://localhost:3000'
-  }));
+  origin: [
+    'https://aroonkumar.me',
+    'https://www.aroonkumar.me',
+    process.env.CORS_ORIGIN,
+    'http://localhost:3000'
+  ].filter(Boolean),
+  credentials: true
+}));
   app.use(morgan('dev'));
   app.use(express.json());
 
